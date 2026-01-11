@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 45 100% 96%;
+    --foreground: 45 20% 10%;
+    --card: 45 100% 98%;
+    --card-foreground: 45 20% 10%;
+    --popover: 45 100% 98%;
+    --popover-foreground: 45 20% 10%;
+    --primary: 43 96% 56%;
+    --primary-foreground: 45 20% 10%;
+    --secondary: 45 90% 88%;
+    --secondary-foreground: 45 20% 10%;
+    --muted: 45 80% 92%;
+    --muted-foreground: 45 20% 40%;
+    --accent: 42 100% 70%;
+    --accent-foreground: 45 20% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 45 50% 82%;
+    --input: 45 50% 82%;
+    --ring: 43 96% 56%;
+    --chart-1: 43 96% 56%;
+    --chart-2: 42 100% 70%;
+    --chart-3: 45 90% 65%;
+    --chart-4: 40 95% 60%;
+    --chart-5: 38 92% 62%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 45 15% 8%;
+    --foreground: 45 100% 95%;
+    --card: 45 20% 12%;
+    --card-foreground: 45 100% 95%;
+    --popover: 45 20% 12%;
+    --popover-foreground: 45 100% 95%;
+    --primary: 43 96% 56%;
+    --primary-foreground: 45 15% 8%;
+    --secondary: 45 25% 18%;
+    --secondary-foreground: 45 100% 95%;
+    --muted: 45 25% 18%;
+    --muted-foreground: 45 50% 65%;
+    --accent: 42 100% 70%;
+    --accent-foreground: 45 15% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 45 100% 95%;
+    --border: 45 25% 25%;
+    --input: 45 25% 25%;
+    --ring: 43 96% 56%;
+    --chart-1: 43 96% 56%;
+    --chart-2: 42 100% 70%;
+    --chart-3: 45 90% 65%;
+    --chart-4: 40 95% 60%;
+    --chart-5: 38 92% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
